@@ -1,0 +1,41 @@
+Coding:
+package array;
+import java.util.Scanner;
+
+public class SmallestElement {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+        double[] sales = new double[5];
+       //you can also do example at -->  //double sales[] = {10.00, 20.00, 50.00, 40.00, 30.00};
+        int index, minIndex;
+        double smallSale;
+        
+        minIndex = 0;
+        System.out.print("Enter 5 array elements : ");
+		for(int i = 0; i < sales.length;i++)
+			sales[i] = sc.nextDouble();
+            
+        for(index = 1; index<sales.length; index++)
+            if(sales[minIndex] > sales[index])
+            minIndex = index;
+        System.out.println(minIndex);
+        smallSale = sales[minIndex];
+        
+        System.out.println(smallSale);
+
+	}
+
+
+	}
+
+Output:
+Enter 5 array elements : 5
+7
+4
+1
+9
+3
+1.0
