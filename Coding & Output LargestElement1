@@ -1,0 +1,31 @@
+Coding:
+package array;
+
+public class LargestElement {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//you also can do example -->//double[] sales = new double[10];
+		double sales[] = {10.00,20.00,50.00,30.00,40.00};
+		int index, maxIndex;
+		double largestSale;
+		
+		maxIndex = 0;
+		
+		for(index = 1; index<sales.length;index++)
+			if(sales[maxIndex] < sales[index])
+				maxIndex = index;
+		   largestSale = sales[maxIndex];
+		   //boleh print macIndex dekat sini jugak
+		
+		System.out.println(largestSale);
+		System.out.println(maxIndex);
+
+	}
+
+}
+
+
+Output:
+50.0
+2
