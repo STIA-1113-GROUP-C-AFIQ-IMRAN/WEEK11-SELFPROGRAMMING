@@ -1,0 +1,46 @@
+Coding:
+package array;
+
+public class ArrayAlpha {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int Alpha[] = new int [15];
+		int i;
+		
+		Alpha[0] = 10;
+		Alpha[1] = 56;
+		Alpha[2] = 36;
+		Alpha[3] = 78;
+		Alpha[4] = 27;
+		Alpha[5] = 35;
+		Alpha[6] = 9;
+		Alpha[7] = 12;
+		Alpha[8] = 78;
+		Alpha[9] = 99;
+		Alpha[10] = 37;
+		Alpha[11] = 77;
+		Alpha[12] = 86;
+		Alpha[13] = 32;
+		Alpha[14] = 55;
+		
+		for( i = 0; i< Alpha.length; i++);
+		System.out.println("tenth element of array is: " + Alpha[10]);
+		
+		int sum = Alpha[5] + Alpha[12];
+		System.out.println("sixth element of array is: " + Alpha[5]);
+		System.out.println("Thirteenth element of array is: " + Alpha[12]);
+		System.out.println("Sum of sixth and thirteen: " + sum);
+		System.out.println("ninth element of array is: " + Alpha[8]);
+
+	}
+
+}
+
+Output:
+tenth element of array is: 37
+sixth element of array is: 35
+Thirteenth element of array is: 86
+Sum of sixth and thirteen: 121
+ninth element of array is: 78
